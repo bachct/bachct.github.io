@@ -1,0 +1,185 @@
+@viewport{
+    zoom: 1.0;
+    width: device-width;
+}
+
+* {
+    -webkit-tap-highlight-color: rgba(0,0,0,0); /* make transparent link selection, adjust last value opacity 0 to 1.0 */
+}
+
+
+
+body 
+{
+    font-size: 14px;
+    line-height: 1.2em;
+    font-family:Georgia;
+    
+    -webkit-touch-callout: none;               /* prevent callout to copy image, etc when tap to hold */
+    -webkit-text-size-adjust: none;            /* prevent webkit from resizing text to fit */
+    -webkit-user-select: none;                 /* prevent copy paste, to allow, change 'none' to 'text' */
+    margin:0px;
+    padding:0px;
+    text-transform:normal;
+    
+}
+
+#wrapper {
+	min-height:100vh;
+	position:relative;
+}
+
+/* Portrait layout (default) */
+#app
+{
+    background:url(../img/logo.png) no-repeat center top; /* 170px x 200px */
+    position:absolute;             /* position in the center of the screen */
+    left:50%;
+    top:50%;
+    height:50px;                   /* text area height */
+    width:225px;                   /* text area width */
+    
+    padding:180px 0px 0px 0px;     /* image height is 200px (bottom 20px are overlapped with text) */
+    margin:-115px 0px 0px -112px;  /* offset vertical: half of image height and text area height */
+                                   /* offset horizontal: half of text area width */
+}
+
+
+
+
+
+ 
+.header {
+    background-color: #ff0000; 
+    font-family:Georgia;
+    height: 20px ;    
+    text-shadow: 2px ;
+    font-family:cursive ;
+    font-size: 20px ;
+    font-weight: bold ;
+       
+}
+
+#content
+{
+	height: 80vh;
+    padding-left: 10px;
+	padding-right: 10px;
+	color: black;
+	font-weight: normal;
+	font-size: 14px;
+	padding-bottom:5vh; /* Height of the footer element */
+}
+
+ul#menu {
+    padding: 0;
+}
+
+#p
+{
+    height: 8vh;
+    font-size:120%;
+    line-height:1.4em;
+    background-color: #ff0000;
+}
+
+
+.img {
+    padding-left: 5%;
+}
+
+#footer {
+    background:#000000;
+    color: white;
+    text-align: center;
+	height:5vh;
+    width: 100vw;
+	position:absolute;
+	bottom:0;
+	left:0;
+}
+
+.css-input {
+    
+    border-style: solid;
+	padding: 5px;
+	font-size: 1.2em;
+	border-radius: 6px;
+	border-width: 1px;
+	border-color: #ff0000;
+	box-shadow: 4px 3px 4px 0px rgba(42,42,42,.76);
+	font-family: cursive;
+    width: 300px;
+}
+
+.css-input:focus {
+	outline: none;
+}
+
+.submit-css {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  width: 160px;
+  height: 30px;
+  cursor: pointer;
+  margin: 0 auto;
+  border: 2px solid rgb(255,28,27);
+  -webkit-border-radius: 8px;
+  border-radius: 8px;
+  font: bold 17px/27px "Advent Pro", Helvetica, sans-serif;
+  color: rgb(255,10,9);
+  text-align: center;
+  -o-text-overflow: clip;
+  text-overflow: clip;
+  letter-spacing: 1px;
+  background: -webkit-linear-gradient(-90deg, rgba(0,0,0,0.2) 0, rgba(0,0,0,0.2) 50%, rgba(0,0,0,0.4) 51%, rgba(0,0,0,0) 100%, rgba(0,0,0,0.2) 100%), rgba(0,0,0,0);
+  background: -moz-linear-gradient(180deg, rgba(0,0,0,0.2) 0, rgba(0,0,0,0.2) 50%, rgba(0,0,0,0.4) 51%, rgba(0,0,0,0) 100%, rgba(0,0,0,0.2) 100%), rgba(0,0,0,0);
+  background: linear-gradient(180deg, rgba(0,0,0,0.2) 0, rgba(0,0,0,0.2) 50%, rgba(0,0,0,0.4) 51%, rgba(0,0,0,0) 100%, rgba(0,0,0,0.2) 100%), rgba(255,255,255,0.2);
+  background-position: 50% 50%;
+  -webkit-background-origin: padding-box;
+  background-origin: padding-box;
+  -webkit-background-clip: border-box;
+  background-clip: border-box;
+  -webkit-background-size: auto auto;
+  background-size: auto auto;
+  -webkit-transition: background-color 0.3s cubic-bezier(0, 0, 0, 0), color 0.3s cubic-bezier(0, 0, 0, 0), width 0.3s cubic-bezier(0, 0, 0, 0), border-width 0.3s cubic-bezier(0, 0, 0, 0), border-color 0.3s cubic-bezier(0, 0, 0, 0);
+  -moz-transition: background-color 0.3s cubic-bezier(0, 0, 0, 0), color 0.3s cubic-bezier(0, 0, 0, 0), width 0.3s cubic-bezier(0, 0, 0, 0), border-width 0.3s cubic-bezier(0, 0, 0, 0), border-color 0.3s cubic-bezier(0, 0, 0, 0);
+  -o-transition: background-color 0.3s cubic-bezier(0, 0, 0, 0), color 0.3s cubic-bezier(0, 0, 0, 0), width 0.3s cubic-bezier(0, 0, 0, 0), border-width 0.3s cubic-bezier(0, 0, 0, 0), border-color 0.3s cubic-bezier(0, 0, 0, 0);
+  transition: background-color 0.3s cubic-bezier(0, 0, 0, 0), color 0.3s cubic-bezier(0, 0, 0, 0), width 0.3s cubic-bezier(0, 0, 0, 0), border-width 0.3s cubic-bezier(0, 0, 0, 0), border-color 0.3s cubic-bezier(0, 0, 0, 0);
+}
+
+.submit-css:hover {
+  border: 2px solid rgba(40,43,42,1);
+  color: rgba(15,13,13,1);
+  background: -webkit-linear-gradient(0deg, rgba(255,255,255,1) 0, rgba(200,200,200,1) 100%), rgb(30, 205, 151);
+  background: -moz-linear-gradient(90deg, rgba(255,255,255,1) 0, rgba(200,200,200,1) 100%), rgb(30, 205, 151);
+  background: linear-gradient(90deg, rgba(255,255,255,1) 0, rgba(200,200,200,1) 100%), rgb(30, 205, 151);
+  background-position: 50% 50%;
+  -webkit-background-origin: padding-box;
+  background-origin: padding-box;
+  -webkit-background-clip: border-box;
+  background-clip: border-box;
+  -webkit-background-size: auto auto;
+  background-size: auto auto;
+}
+
+.submit-css:active {
+  border: 2px solid rgba(34,38,36,1);
+  color: rgba(255,255,255,1);
+  background: -webkit-linear-gradient(-90.46923439010001deg, rgba(246,248,249,1) 0, rgba(229,235,238,1) 50%, rgba(215,222,227,1) 51%, rgba(245,247,249,1) 100%), -webkit-linear-gradient(0deg, rgba(255,255,255,0) 0, rgba(255,255,255,0.2) 50%, rgba(255,255,255,0.8) 51%, rgba(255,255,255,0.8) 100%), -webkit-linear-gradient(0deg, rgba(150,150,150,1) 0, rgba(95,95,95,1) 50%, rgba(50,50,50,1) 51%, rgba(30,30,30,1) 100%), rgba(33,224,163,1);
+  background: -moz-linear-gradient(180.4692343901deg, rgba(246,248,249,1) 0, rgba(229,235,238,1) 50%, rgba(215,222,227,1) 51%, rgba(245,247,249,1) 100%), -moz-linear-gradient(90deg, rgba(255,255,255,0) 0, rgba(255,255,255,0.2) 50%, rgba(255,255,255,0.8) 51%, rgba(255,255,255,0.8) 100%), -moz-linear-gradient(90deg, rgba(150,150,150,1) 0, rgba(95,95,95,1) 50%, rgba(50,50,50,1) 51%, rgba(30,30,30,1) 100%), rgba(33,224,163,1);
+  background: linear-gradient(180.4692343901deg, rgba(246,248,249,1) 0, rgba(229,235,238,1) 50%, rgba(215,222,227,1) 51%, rgba(245,247,249,1) 100%), linear-gradient(90deg, rgba(255,255,255,0) 0, rgba(255,255,255,0.2) 50%, rgba(255,255,255,0.8) 51%, rgba(255,255,255,0.8) 100%), linear-gradient(90deg, rgba(150,150,150,1) 0, rgba(95,95,95,1) 50%, rgba(50,50,50,1) 51%, rgba(30,30,30,1) 100%), rgba(33,224,163,1);
+  background-position: 50% 50%;
+  -webkit-background-origin: padding-box;
+  background-origin: padding-box;
+  -webkit-background-clip: border-box;
+  background-clip: border-box;
+  -webkit-background-size: auto auto;
+  background-size: auto auto;
+  -webkit-transition: none;
+  -moz-transition: none;
+  -o-transition: none;
+  transition: none;
+}
+

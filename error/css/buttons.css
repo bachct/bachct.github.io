@@ -1,0 +1,214 @@
+a.button
+{
+    position: relative;
+    height: 15px;
+    padding: 12px 20px 15px 68px;
+    cursor: pointer;
+    text-align: Right;
+    font-weight: bold;
+    font-size: 18px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    -webkit-box-shadow: 2px 2px 2px 0 rgba(0,0,0,.3);
+    -moz-box-shadow: 2px 2px 2px 0 rgba(0,0,0,.3);
+    box-shadow: 2px 2px 2px 0 rgba(0,0,0,.3);
+    display: inline-block !important;
+    font: 700 15px 'Arial', Helvetica, Clean, sans-serif;
+    margin: 0px 0px 20px 10px;
+    position: relative;
+    text-decoration: none;
+    transition: background-position .2s ease, margin .1s ease;
+    -webkit-transition: background-position .2s ease, margin .1s ease;
+    -moz-transition: background-position .2s ease, margin .1s ease;
+    background-repeat: repeat-x;
+}
+
+a.button:hover
+{ 
+    background-position: 0 10px 
+}
+
+a.button:active 
+{
+    -webkit-box-shadow: -1px -1px 2px 0 rgba(0,0,0,.3);
+    -moz-box-shadow: -1px -1px 2px 0 rgba(0,0,0,.3);
+    box-shadow: -1px -1px 2px 0 rgba(0,0,0,.3);
+    margin: 2px 0 20px 10px;
+}
+
+a.button span.bar 
+{
+    width: 1px;
+    height: 30px;
+    position: absolute;
+    background: black;
+    top: 5px;
+    left: 50px;
+}
+
+a.button div.arrow 
+{
+    position: absolute;
+    left: 20px;
+    top: 14px;
+}
+
+a.button div.arrow span.top 
+{
+    position: absolute;
+    width: 6px;
+    height: 9px;
+    background: #000;
+    top: 0;
+    left: 3px;
+}
+
+a.button div.arrow span.bottom,
+div.arrow span.bottomShadow 
+{
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 8px solid black;
+    top: 9px;
+    left: -2px;
+    z-index: 2;
+}
+
+a.button div.arrow span.bottomShadow 
+{
+    z-index: 1;
+    left: -1px;
+}
+
+/* Dispenser
+   ================================================== */
+
+a.dispenser 
+{
+    background-color: #ff8636;
+    background-image: -webkit-linear-gradient(top, #ff8636, #9a3e00);
+    background-image: -moz-linear-gradient(top, #ff8636, #9a3e00);
+    background-image: -ms-linear-gradient(top, #ff8636, #9a3e00);
+    background-image: -o-linear-gradient(top, #ff8636, #9a3e00);
+    background-image: linear-gradient(top, #ff8636, #9a3e00);
+    text-shadow: 1px 1px 1px #ff7f42;
+    border-top: 1px solid #ffa542;
+}
+
+a.dispenser span.bar 
+{
+    -webkit-box-shadow: 1px 1px 1px #ff7f42;
+    -moz-box-shadow: 1px 1px 1px #ff7f42;
+    box-shadow: 1px 1px 1px #ff7f42;
+}
+
+a.dispenser div.arrow span.top 
+{
+    -webkit-box-shadow: 1px 1px 1px #ff7f42;
+    -moz-box-shadow: 1px 1px 1px #ff7f42;
+    box-shadow: 1px 1px 1px #ff7f42;
+}
+
+a.dispenser div.arrow span.bottomShadow 
+{ 
+    border-top: 8px solid #ff7f42 
+}
+
+/* Printer
+   ================================================== */
+
+a.printer 
+{
+    background-color: #FF8636;
+    background-image: -webkit-linear-gradient(top, #ff8636, #9a3e00);
+    background-image: -moz-linear-gradient(top, #ff8636, #9a3e00);
+    background-image: -ms-linear-gradient(top, #ff8636, #9a3e00);
+    background-image: -o-linear-gradient(top, #ff8636, #9a3e00);
+    background-image: linear-gradient(top, #ff8636, #9a3e00);
+    text-shadow: 1px 1px 1px #ff7f42;
+    border-top: 1px solid #ffa542;
+}
+
+a.printer span.bar  
+{
+    -webkit-box-shadow: 1px 1px 1px #ff7f42;
+    -moz-box-shadow: 1px 1px 1px #ff7f42;
+    box-shadow: 1px 1px 1px #ff7f42;
+}
+
+a.printer div.arrow span.top 
+{
+    -webkit-box-shadow: 1px 1px 1px #ff7f42;
+    -moz-box-shadow: 1px 1px 1px #ff7f42;
+    box-shadow: 1px 1px 1px #ff7f42;
+}
+
+a.printer div.arrow span.bottomShadow 
+{ 
+    border-top: 8px solid #ff7f42 
+}
+
+/* Card Reader
+   ================================================== */
+
+a.card_reader 
+{
+    background-color: #ff8636;
+    background-image: -webkit-linear-gradient(top, #ff8636, #9a3e00);
+    background-image: -moz-linear-gradient(top, #ff8636, #9a3e00);
+    background-image: -ms-linear-gradient(top, #ff8636, #9a3e00);
+    background-image: -o-linear-gradient(top, #ff8636, #9a3e00);
+    background-image: linear-gradient(top, #ff8636, #9a3e00);
+    text-shadow: 1px 1px 1px #ff7f42;
+    border-top: 1px solid #ffa542;
+}
+
+a.card_reader span.bar  
+{
+    -webkit-box-shadow: 1px 1px 1px #ff7f42;
+    -moz-box-shadow: 1px 1px 1px #ff7f42;
+    box-shadow: 1px 1px 1px #ff7f42;
+}
+
+a.card_reader div.arrow span.top 
+{
+    -webkit-box-shadow: 1px 1px 1px #ff7f42;
+    -moz-box-shadow: 1px 1px 1px #ff7f42;
+    box-shadow: 1px 1px 1px #ff7f42;
+}
+
+a.card_reader div.arrow span.bottomShadow 
+{ 
+    border-top: 8px solid #ff7f42 
+}
+
+
+
+/* Position of the buttons on index page
+   ================================================== */
+
+
+a.dispenser 
+{
+    position: absolute;
+    top: 180px;
+    left: 60px;
+}
+
+a.card_reader 
+{
+    position: absolute;
+    top: 240px;
+    left: 60px;
+}
+
+a.printer 
+{
+    position: absolute;
+    top: 300px;
+    left: 60px;
+}

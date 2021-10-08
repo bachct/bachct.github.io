@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1"> 
+		<title></title>
+		<meta name="Ray Thompson 5-11-2017"/>
+        <link href="css/input-page.css" rel="stylesheet" type="text/css"/>
+        <link rel="stylesheet" type="text/css" href="css/transparent.css" />
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+       <link rel="stylesheet" type="text/css" href="css/4_col.css" />
+		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+        <script src="js/modernizr.custom.25376.js"></script>
+       <script type="text/javascript">
+$(document).ready(function(){
+  $("#menu_button").click(function(){
+    show_menu();
+  });
+});
+function show_menu()
+{
+$('#menu_links').animate({width:'toggle'},350);
+}
+    </script>
+	</head>
+	<body background = "img/mcrw.jpg"  style opacity = "0.2">        
+     <p id="showMenu">
+    &nbsp;&nbsp;<img src="img/menuicon.png"><font color ="#FFFF00">&nbsp;&nbsp;Menu
+            </font> </p><hr>
+		<div id="perspective" class="perspective effect-airbnb">
+			<div class="container">
+				<div class="wrapper">
+                    <div class="transbox">  
+                        <div class="codrops-top clearfix">
+						</div>
+					                        <h2>ATM Error Code<br><br>Translator</h2>
+                            <h3>NCR 56XX Personas/662x/663x<br>Intergrated Motorised Card Reader Writer (RS232 OR USB) Error Codes.</h3> 
+                        <h4 align="left">Enter data:</h4>
+   		  <center> <input type="number" id="mcrw_mstatus" value="" class="css-input" placeholder="Enter M-Status"/><br><br>    
+        <script src="js/ncr_66XX_mcrw.js"></script> </center>    
+        <center><input id="mcrw_Input" type="text" class="css-input" value="" placeholder="Enter M-Data"></center><br/><br>
+            <div class="submit-css" onclick="mcrw_Function()+mcrw_data()">Submit<br>
+           <script src="js/mcrw_data.js"></script><br/> 
+                        </div>
+            <h3 align="left">M-Status:<p id="mcrw_answer"></p></h3>
+            <h4 align="left">Byte 0:<p id="mcrw_Byte0"></p></h4>
+            <h4 align="left">Byte 1:<p id="mcrw_Byte1"></p></h4>
+            <h4 align="left">Byte 2:<p id="mcrw_Byte2"></p></h4>
+            <h4 align="left">Byte 3:<p id="mcrw_Byte3"></p></h4>
+            <h4 align="left">Byte 4:<p id="mcrw_Byte4"></p></h4>
+            <h4 align="left">Byte 5:<p id="mcrw_Byte5"></p></h4>
+                </div>
+			</div><!-- /container -->
+                </div>
+			<nav class="outer-nav left vertical">
+				<a href="index.html" class="icon-home">HOME</a>
+				<a href="NCR_menu.html" class="icon-star">NCR MENU</a>
+				<a href="Extra_menu.html" class="icon-lock">HELPFUL INFO</a>
+				<a href="about.html" class="icon-mail">ABOUT</a>
+				<a href="contact.html" class="icon-mail">CONTACT</a>
+			</nav>
+            </div>
+        	<script src="js/classie.js"></script>
+        <script src="js/menu.js"></script>
+	</body>
+</html>

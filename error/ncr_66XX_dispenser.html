@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1"> 
+		<title></title>
+		<meta name="Ray Thompson 28-10-2017"/>
+        <link href="css/input-page.css" rel="stylesheet" type="text/css"/>
+      <link rel="stylesheet" type="text/css" href="css/pop-up.css">
+        <link rel="stylesheet" type="text/css" href="css/transparent.css" />
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+        <script src="js/modernizr.custom.25376.js"></script>
+        <SCRIPT TYPE="text/javascript">
+    window.onload = function() {
+  document.getElementById("LearnMoreBtn").onclick = function(){
+        var overlay = document.getElementById("overlay");
+        var popup = document.getElementById("popup");
+        overlay.style.display = "block";
+        popup.style.display = "block";
+    };
+  document.getElementById("CloseBtn").onclick = function(){
+        var overlay = document.getElementById("overlay");
+        var popup = document.getElementById("popup");
+        overlay.style.display = "none";
+        popup.style.display = "none";      
+  }
+};
+</SCRIPT>
+<script type="text/javascript">
+$(document).ready(function(){
+  $("#menu_button").click(function(){
+    show_menu();
+  });
+});
+function show_menu()
+{
+$('#menu_links').animate({width:'toggle'},350);
+}
+    </script>
+	</head>	
+        <body background="img/S2_media.png">
+        <p id="showMenu">
+    &nbsp;&nbsp;<img src="img/menuicon.png"><font color ="#FFFF00">&nbsp;&nbsp;Menu
+            </font></p><hr>
+		<div id="perspective" class="perspective effect-airbnb">
+			<div class="container">
+				<div class="wrapper">
+                    <div class="transbox">
+                    <h2>ATM Error Code Translator</h2><br><br><h3>66xx Dispenser Error Codes.</h3>
+        <center><input type="number" id="mstatus" class="css-input" value="" placeholder="Enter M-Status">
+           <br/><br>
+                 <input class="css-input" id="myInput0" type="text" value="" placeholder="Enter M-Data"><br/><br/>    </center>                    
+        <div class="submit-css" onclick="myFunction()+data()"><center>Submit
+        <script src="js/ncr_66XX_dispenser.js"></script>
+            <script src="js/ncr_66XX_dispenser_mdata.js"></script> </center></div>
+     <br> 
+                        <h4 align="left"><p id="answer"></p></h4>
+                        <h4 align="left"><p id="Byte0"></p></h4>
+                        <h4 align="left"><p id="Byte1"></p></h4>
+                        <h4 align="left"><p id="Byte2"></p></h4>
+                        <h4 align="left"><p id="Byte3"></p></h4>
+                        <h4 align="left"><p id="Byte4"></p></h4>
+                        <h4 align="left"><p id="Byte5"></p></h4>
+                        <h4 align="left"><p id="Byte6"></p></h4>
+                        <h4 align="left"><p id="Byte7"></p></h4>
+                        <h4 align="left"><p id="Byte8"></p></h4>
+                        <h4 align="left"><p id="Byte9"></p></h4>
+            </div>	
+				</div><!-- wrapper -->
+			</div><!-- /container -->
+			<nav class="outer-nav left vertical">
+				<a href="index.html" class="icon-home">HOME</a>
+				<a href="NCR_menu.html" class="icon-star">NCR MENU</a>
+				<a href="Extra_menu.html" class="icon-lock">HELPFUL INFO</a>
+				<a href="about.html" class="icon-mail">ABOUT</a>
+				<a href="contact.html" class="icon-mail">CONTACT</a>
+            </nav>
+		</div>
+        	<script src="js/classie.js"></script>
+        <script src="js/menu.js"></script>
+	</body>
+</html>

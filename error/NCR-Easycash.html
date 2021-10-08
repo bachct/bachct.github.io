@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1"> 
+		<title></title>
+		<meta name="Ray Thompson 29-4-2017"/>
+        
+        <link href="css/input-page.css" rel="stylesheet" type="text/css"/>
+      <link rel="stylesheet" type="text/css" href="css/pop-up.css">
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+        <script src="js/modernizr.custom.25376.js"></script>
+        <script TYPE="text/javascript">
+    window.onload = function() {
+  document.getElementById("LearnMoreBtn").onclick = function(){
+        var overlay = document.getElementById("overlay");
+        var popup = document.getElementById("popup");
+        overlay.style.display = "block";
+        popup.style.display = "block";
+    };
+    
+  document.getElementById("CloseBtn").onclick = function(){
+        var overlay = document.getElementById("overlay");
+        var popup = document.getElementById("popup");
+        overlay.style.display = "none";
+        popup.style.display = "none";      
+  }
+};
+</script>
+<script type="text/javascript">
+$(document).ready(function(){
+  $("#menu_button").click(function(){
+    show_menu();
+  });
+});
+function show_menu()
+{
+$('#menu_links').animate({width:'toggle'},350);
+}
+    </script>
+	</head>
+	<body>
+        <p id="showMenu">
+    &nbsp;&nbsp;<img src="img/menuicon.png">&nbsp;&nbsp;Menu
+        </p>
+		<div id="perspective" class="perspective effect-airbnb">
+			<div class="container">
+				<div class="wrapper"><!-- wrapper needed for scroll -->
+					<!-- Top Navigation -->
+					<div class="codrops-top clearfix">
+						</div>
+					<header class="codrops-header">
+						<h3>ATM Error Code Translator <br><br> NCR Easycash Error Codes.</h3>
+    
+					</header>
+					<div class="main clearfix">
+						<div class="column">							
+							<div id="content"><font color="#0066FF">Enter data:</font>
+    <div id="img"><onclick="Function()"><img id="LearnMoreBtn" src="img/help.png" width="25" height="25"/></onclick></div><br>
+<div id="overlay"></div>
+<div id="popup">
+    <p>The input box is for the error code input only. Just 3 Digits.</p><p>When you have finished tap the submit button.</p>
+    <onclick id="CloseBtn"><center>Close.</center>
+    </onclick></div>
+        <center><input type="number" id="Easycash"  class="css-input" value="" placeholder="Enter Error Code">
+           <br/><br>
+                     </center>                    
+        <div class="submit-css" onclick="myFunction()"><center>Submit
+        <script src="js/NCR-Easycash.js"></script>
+         </center>
+        </div>
+     <br>
+            <font color="#000000">Translation:<br><br><p id="answer"></p><hr></font>        
+            
+            </div> 
+						</div>
+						</div><!-- /main -->
+				</div><!-- wrapper -->
+			</div><!-- /container -->
+			<nav class="outer-nav left vertical">
+				<a href="index.html" class="icon-home">HOME</a>
+				<a href="NCR_menu.html" class="icon-star">NCR MENU</a>
+				<a href="about.html" class="icon-mail">ABOUT</a>
+				<a href="contact.html" class="icon-mail">CONTACT</a>
+            </nav>
+		</div><!-- /perspective -->
+        
+        	<script src="js/classie.js"></script>
+        <script src="js/menu.js"></script>
+	</body>
+</html>

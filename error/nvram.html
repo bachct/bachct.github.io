@@ -1,0 +1,86 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<meta charset="utf-8">
+<title>ATM Error Code Translator</title>
+<link href="js/jquery.mobile.theme-1.0.min.css" rel="stylesheet" type="text/css"/>
+<link href="js/jquery.mobile.structure-1.0.min.css" rel="stylesheet" type="text/css"/>
+<script src="js/jquery-1.6.4.min.js" type="text/javascript"></script>
+<script src="js/jquery.mobile-1.0.min.js" type="text/javascript"></script>
+</head> 
+<body> 
+<div data-role="page" id="page">
+	<div data-role="header">
+		<center><font size="+1"><br>ATM Error Code Translator<br>PLUS<br>NCR EXTRAS PAGE</font></center><br>
+       <br>
+	</div>
+    <div data-role="content">
+        <font color="green">NVRam Clear:
+        <br>
+            <h3>22e DISPENSER NVRAM CLEAR</h3>
+            <ol>
+<li>1. Power off ATM
+2. Pull out dispenser and remove battery from board. Unclips from R/H side. Replace after 60 seconds.
+3. Rack dispenser back into position and power on ATM with NCR usb key inserted.
+4. When booted up, enter into diagnostics/sys app/ and select number 8 self service configuration
+5. Select 1 set device config/ then 1 usb cash dispenser/ then 1 note configuration and the dispenser will run a clear
+6. Select 1 set
+7. Display will show note size type 1 through to 4 as 66
+8. Tab down to singularity type 1 and enter in 102
+9. Tab down to singularity type 2 and enter 107
+10. 3 and 4 can remain as 255 so tab down to page down and press page down on right hand side fdk menu.
+11. Leave presentation order as 1234 and press ok
+12. Display will show configure new parameters, toggle to yes and press ok
+13. Hit previous and select 2 device parameter configuration
+14. Dispense protection configuration should be USB. If logical or physical, toggle to usb and press ok.
+15. Cancel back out to the main system application menu and check 5 device status list. Complete a clear all if required and exit back to main menu to complete a test cash.
+The ATM may reset itself when exiting to the main menu. If so wait for full reboot and complete test cash and bring the ATM back into service and complete a test transaction.
+    5877, 5870 Bunch and 5884 Dispenser.</li></ol>
+            5877, 5870 Bunch and 5884 Dispenser.</font><br><br>
+        <font color="#0066FF" ><p>The top bank of 8 switches.</p>
+        <list>
+            <ol>Switches 3 and 8 on.</ol>
+            <ol>Power the ATM up.</ol>
+            <ol>The LED's on the control board start pulsing.</ol>
+            <ol>When they stop pulsing turn the ATM power off.</ol>
+            <ol>Reset the 2 dip switches.</ol>
+            <ol>The note opacities and singularities will need setting up.</ol>
+            <ol>$20 Type1 = 102 and Type2 $50 = 107 & sizes at 66.</ol></list>
+        </font><br>
+        <hr>
+        <font color="green">P4 & P3 SDC NVRam Clear:
+            <br>
+            
+        <br>
+            </font><br>
+        <font color="#0066FF" ><p>The bank of 8 switches on the SDC board.</p>
+        <list>
+            <ol>Switches 3 and 8 on.</ol>
+            <ol>Power the ATM up.</ol>
+            <ol>Give it 45 seconds.</ol>
+            <ol>Turn the ATM power off.</ol>
+            <ol>Reset the 2 dip switches.</ol>
+            </list>
+        </font><br>
+        <hr>
+        <font color="green">22e SDC NVRam Clear:
+        <br>
+            </font><br>
+        <font color="#0066FF" >
+        <list>
+            <ol>Remove the onboard battery.</ol>
+            <ol>Give it 45 seconds.</ol>
+            <ol>Replace the battery.</ol>
+            </list>
+        </font><br>
+        <hr>
+    </div>
+    <nav class="outer-nav left vertical">
+				<a href="index.html" class="icon-home">HOME</a>
+				<a href="NCR_menu.html" class="icon-star">NCR MENU</a>
+				<a href="Extra_menu.html" class="icon-lock">HELPFUL INFO</a>
+				<a href="about.html" class="icon-mail">ABOUT</a>
+				<a href="contact.html" class="icon-mail">CONTACT</a>
+			</nav></center>
+    </body>
+</html>

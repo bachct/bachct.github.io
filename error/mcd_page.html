@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1"> 
+		<title></title>
+		<meta name="Ray Thompson 29-4-2017"/>
+        <link href="css/input-page.css" rel="stylesheet" type="text/css"/>
+        <link href="css/index_main.less.css" rel="stylesheet" type="text/css"/>
+      <link rel="stylesheet" type="text/css" href="css/pop-up.css">
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+        <script src="js/modernizr.custom.25376.js"></script>
+        <SCRIPT TYPE="text/javascript">
+    window.onload = function() {
+  document.getElementById("LearnMoreBtn").onclick = function(){
+        var overlay = document.getElementById("overlay");
+        var popup = document.getElementById("popup");
+        overlay.style.display = "block";
+        popup.style.display = "block";
+    };
+    
+  document.getElementById("CloseBtn").onclick = function(){
+        var overlay = document.getElementById("overlay");
+        var popup = document.getElementById("popup");
+        overlay.style.display = "none";
+        popup.style.display = "none";      
+  }
+};
+</SCRIPT>
+<script type="text/javascript">
+$(document).ready(function(){
+  $("#menu_button").click(function(){
+    show_menu();
+  });
+});
+function show_menu()
+{
+$('#menu_links').animate({width:'toggle'},350);
+}
+    </script>
+	</head>
+	<body>
+        <p id="showMenu">
+    &nbsp;&nbsp;<img src="img/menuicon.png">&nbsp;&nbsp;Menu
+        </p>
+		<div id="perspective" class="perspective effect-airbnb">
+			<div class="container">
+				<div class="wrapper"><!-- wrapper needed for scroll -->
+					<!-- Top Navigation -->
+					<div class="codrops-top clearfix">
+						</div>
+					<header class="codrops-header">
+						<h3>ATM Error Code Translator</h3>
+					</header>
+					<div class="main clearfix">
+						<div class="column">							
+							    
+  <div id="content">
+        <font color="green">MCD ADSL Setup/Conversion:</font><br><br>
+        <font color="#0066FF" >Find your IP Address out first.<br><br>
+         <div style="text-align:left">
+         <input type="text" id="NumberInput" placeholder="192" style="width:50px" style="height:38px"/>
+         <input type="text" id="NumberInput2" placeholder="168" style="width:50px" style="height:38px"/>
+         <input type="text" id="NumberInput3" placeholder="023" style="width:50px" style="height:38px"/>
+         <input type="text" id="NumberInput4" placeholder="124" style="width:50px" style="height:38px"/>
+         <br><br>
+            
+        <font color="#0066FF" size="2px"><center>Entering your Modem/ATM IP Address will populate step 18 with that address(example: 192.168.23.124). It will convert it to Hex for you:</center></font>
+          </div><br><br>
+    <div style="text-align:left">
+         <input type="text" id="NumberInput5" placeholder="255" style="width:50px" style="height:38px"/>
+         <input type="text" id="NumberInput6" placeholder="255" style="width:50px" style="height:38px"/>
+         <input type="text" id="NumberInput7" placeholder="255" style="width:50px" style="height:38px"/>
+         <input type="text" id="NumberInput8" placeholder="252" style="width:50px" style="height:38px"/>
+        <br/><br/>
+        <font color="#0066FF" size="2px"><center>Entering your Subnet Address will populate step 19 with that address(example: 255.255.255.252). It will convert it to Hex for you:</center></font>
+        <br><br></div>
+    <div style="text-align:left">
+         <input type="text" id="NumberInput9" placeholder="192" style="width:50px" style="height:38px"/>
+         <input type="text" id="NumberInput10" placeholder="168" style="width:50px" style="height:38px"/>
+         <input type="text" id="NumberInput11" placeholder="023" style="width:50px" style="height:38px"/>
+         <input type="text" id="NumberInput12" placeholder="125" style="width:50px" style="height:38px"/>
+         <br/><br/>
+        <font color="#0066FF" size="2px"><center>Entering your Gateway Address will populate step 30 with that address(example: 192.168.23.125). It will convert it to Hex for you:</center></font>
+        <br><br></div>
+    <div style="text-align:left">
+         <input type="text" id="NumberInput13" placeholder="010" style="width:50px" style="height:38px"/>
+         <input type="text" id="NumberInput14" placeholder="100" style="width:50px" style="height:38px"/>
+         <input type="text" id="NumberInput15" placeholder="014" style="width:50px" style="height:38px"/>
+         <input type="text" id="NumberInput16" placeholder="026" style="width:50px" style="height:38px"/>
+         <br/><br/>
+<font color="#0066FF" size="2px"><center>Entering your Remote Server Address will populate step 7 + step 24 with that address (example: 10.100.14.26). It will convert it to Hex for you:</center></font>
+<center><button onclick="myFunction()">Submit.</button>  </center>      
+            </div>
+<script>
+function myFunction() {
+    var num = document.getElementById('NumberInput').value;
+    var decNumber = Number(num);    
+    var num2 = document.getElementById('NumberInput2').value;
+    var decNumber2 = Number(num2);
+    var num3 = document.getElementById('NumberInput3').value;
+    var decNumber3 = Number(num3);
+    var num4 = document.getElementById('NumberInput4').value;
+    var decNumber4 = Number(num4);
+    var d1 = decNumber.toString(16);
+    var a1 = d1.toUpperCase();
+    var aa1 = ("0" + a1).slice (-2);
+    var d2 = decNumber2.toString(16);
+    var a2 = d2.toUpperCase();
+    var aa2 = ("0" + a2).slice (-2);
+    var d3 = decNumber3.toString(16);
+    var a3 = d3.toUpperCase();
+    var aa3 = ("0" + a3).slice (-2);
+    var d4 = decNumber4.toString(16);
+    var a4 = d4.toUpperCase();
+    var aa4 = ("0" + a4).slice (-2);
+    var hex1 = aa1+"  Enter - Terminal IP1 = ATM IP 1st Address.";
+    var hex2 = aa2+"  Enter - Terminal IP2 = ATM IP 2nd Address.";
+    var hex3 = aa3+"  Enter - Terminal IP3 = ATM IP 3rd Address.";
+    var hex4 = aa4+"  Enter - Terminal IP4 = ATM IP 4th Address.";
+    var hex101 = aa1+"  Enter - Broadcast Address 1.";
+    var hex102 = aa2+"  Enter - Broadcast Address 2.";
+    var hex103 = aa3+"  Enter - Broadcast Address 3.";
+    var hex104 = "FF Enter";    
+    document.getElementById("demo18").innerHTML= hex1 +"<br>"+hex2+"<br>"+hex3+"<br>"+hex4;
+    document.getElementById("demo20").innerHTML= hex101 +"<br>"+hex102+"<br>"+hex103+"<br>"+hex104;
+    var num5 = document.getElementById('NumberInput5').value;
+    var decNumber5 = Number(num5);    
+    var num6 = document.getElementById('NumberInput6').value;
+    var decNumber6 = Number(num6);
+    var num7 = document.getElementById('NumberInput7').value;
+    var decNumber7 = Number(num7);
+    var num8 = document.getElementById('NumberInput8').value;
+    var decNumber8 = Number(num8);
+    var d5 = decNumber5.toString(16);
+    var a5 = d5.toUpperCase();
+    var aa5 = ("0" + a5).slice (-2);
+    var d6 = decNumber6.toString(16);
+    var a6 = d6.toUpperCase();
+    var aa6 = ("0" + a6).slice (-2);
+    var d7 = decNumber7.toString(16);
+    var a7 = d7.toUpperCase();
+    var aa7 = ("0" + a7).slice (-2);
+    var d8 = decNumber8.toString(16);
+    var a8 = d8.toUpperCase();
+    var aa8 = ("0" + a8).slice (-2);
+    var hex5 = aa5+"  Enter - Subnet mask 1.";
+    var hex6 = aa6+"  Enter - Subnet mask 2.";
+    var hex7 = aa7+"  Enter - Subnet mask 3.";
+    var hex8 = aa8+"  Enter - Subnet mask 4.";    
+   document.getElementById("demo19").innerHTML= hex5 +"<br>"+hex6+"<br>"+hex7+"<br>"+hex8;    
+    var num9 = document.getElementById('NumberInput9').value;
+    var decNumber9 = Number(num9);    
+    var num10 = document.getElementById('NumberInput10').value;
+    var decNumber10 = Number(num10);
+    var num11 = document.getElementById('NumberInput11').value;
+    var decNumber11 = Number(num11);
+    var num12 = document.getElementById('NumberInput12').value;
+    var decNumber12 = Number(num12);
+    var d9 = decNumber9.toString(16);
+    var a9 = d9.toUpperCase();
+    var aa9 = ("0" + a9).slice (-2);
+    var d10 = decNumber10.toString(16);
+    var a10 = d10.toUpperCase();
+    var aa10 = ("0" + a10).slice (-2);
+    var d11 = decNumber11.toString(16);
+    var a11 = d11.toUpperCase();
+    var aa11 = ("0" + a11).slice (-2);
+    var d12 = decNumber12.toString(16);
+    var a12 = d12.toUpperCase();
+    var aa12 = ("0" + a12).slice (-2);
+    var hex9 = aa9+"  Enter - Gateway Address IP 1.";
+    var hex10 = aa10+"  Enter - Gateway Address IP 2.";
+    var hex11 = aa11+"  Enter - Gateway Address IP 3.";
+    var hex12 = aa12+"  Enter - Gateway Address IP 4.";    
+   document.getElementById("demo30").innerHTML= hex9 +"<br>"+hex10+"<br>"+hex11+"<br>"+hex12;    
+    var num13 = document.getElementById('NumberInput13').value;
+    var decNumber13 = Number(num13);    
+    var num14 = document.getElementById('NumberInput14').value;
+    var decNumber14 = Number(num14);
+    var num15 = document.getElementById('NumberInput15').value;
+    var decNumber15 = Number(num15);
+    var num16 = document.getElementById('NumberInput16').value;
+    var decNumber16 = Number(num16);
+    var d13 = decNumber13.toString(16);
+    var a13 = d13.toUpperCase();
+    var aa13 = ("0" + a13).slice (-2);
+    var d14 = decNumber14.toString(16);
+    var a14 = d14.toUpperCase();
+    var aa14 = ("0" + a14).slice (-2);
+    var d15 = decNumber15.toString(16);
+    var a15 = d15.toUpperCase();
+    var aa15 = ("0" + a15).slice (-2);
+    var d16 = decNumber16.toString(16);
+    var a16 = d16.toUpperCase();
+    var aa16 = ("0" + a16).slice (-2);
+    var hex13 = aa13+"  Enter - Remote Server IP 1.";
+    var hex14 = aa14+"  Enter - Remote Server IP 2.";
+    var hex15 = aa15+"  Enter - Remote Server IP 3.";
+    var hex16 = aa16+"  Enter - Remote Server IP 4.";
+    var hex113 = aa13+"  Enter - SOH/Ping IP 1.";
+    var hex114 = aa14+"  Enter - SOH/Ping IP 2.";
+    var hex115 = aa15+"  Enter - SOH/Ping IP 3.";
+    var hex116 = aa16+"  Enter - SOH/Ping IP 4.";    
+   document.getElementById("demo7").innerHTML= hex13 +"<br>"+hex14+"<br>"+hex15+"<br>"+hex16;
+    document.getElementById("demo24").innerHTML= hex113 +"<br>"+hex114+"<br>"+hex115+"<br>"+hex116;    
+}
+</script>
+<br>
+          <ol>
+            <li>Enter Diagnostic FDK.</li>
+            <li>Press 1 - Configuration.</li>
+            <li>Press 4 - Configure Comms.</li>
+            <li>Press 1 - OK to proceed.</li>
+            <li>Press 1 - TCP/IP Access.</li>
+            <li>Press 36 - ENTER - To select Protocol.</li>
+            <li id="demo7"></li>
+            <li>2E05 Enter - Connect to port number.</li> 
+            <li>3C00 Enter - Reconnection timer.</li>
+            <li>FF Enter - Clockticks.</li> 
+            <li>04 Enter - Length size.</li>
+            <li>02 Enter - Length format.</li>
+            <li>04 Enter - Length adjust.</li>
+            <li>04 Enter - Rx bytes to remove.</li>
+            <li>E803 Enter - Local TCP port.</li>
+            <li>2 IBM TCP / IP SSE Enter.</li> 
+            <li>92 Enter - Protocol 92.</li>
+            <li id="demo18"></li>
+            <li id="demo19"></li>
+            <li id="demo20"></li>
+            <li id="demo24"></li>
+            <li>Enter - Just hit Enter.</li> 
+            <li id="demo30"></li>
+            <li>09 Enter - Hops to Dest Default=1.</li>
+            <li>Exit.</li>  
+            <li>Press 1 Yes - OK to proceed, ATM will reset twice.</li>
+              </ol><br>
+<hr>
+            <ol>
+                <font color="green">To print Comms Configuration:</font><br><br> 
+            <li>Diagnostics - Enter.</li> 
+            <li>2 - Maintenance.</li> 
+            <li>Extra Features.</li>
+            <li>1 IBM/IP Diags.</li>
+            <li>1 Display comms config.</li> 
+            <li>Press Print for output.</li>
+            <li>Exit to finish.</li>
+                </ol><br>
+<hr>
+            <ol>
+                <font color="green">To Enter Mac Address:</font><br><br> 
+            <li>Access Menu.</li>
+            <li>Security.</li>
+            <li>Enter Mac Options.</li>
+            <li>1234560100000011.</li>    
+         </ol><br>
+<hr>
+ <br>
+
+        <br>
+          
+                           <!-- wrapper -->
+			<!-- /container -->
+                             
+        </div>
+            </div>
+            </div>
+      </font>
+                            </div>
+                        </div>
+<nav class="outer-nav left vertical">
+				<a href="index.html" class="icon-home">HOME</a>
+				<a href="NCR_menu.html" class="icon-star">NCR MENU</a>
+				<a href="Extra_menu.html" class="icon-lock">HELPFUL INFO</a>
+				<a href="about.html" class="icon-mail">ABOUT</a>
+				<a href="contact.html" class="icon-mail">CONTACT</a>
+            </nav>
+</div><!-- /perspective -->
+        	<script src="js/classie.js"></script>
+        <script src="js/menu.js"></script>
+                
+	</body>
+</html>

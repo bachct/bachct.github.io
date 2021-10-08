@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html  lang="en">
+<head>
+
+    <meta charset="utf-8">
+
+    <title>keyboard</title>
+    
+    <style>
+     .button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}</style>
+
+    <style media="all">
+
+#keyboard {
+    width: 200px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    margin-left: 80px;
+    border:1px solid #ff0000;
+    border-radius:10px;
+    background-color:#000000;    
+    text-align:center;
+    box-shadow:4px 4px 4px #999;
+ }
+#keyboard div {
+    
+    margin:3px ;
+ }
+
+#keyboard label {
+    
+    margin-top:2px;
+    font-family:serif;
+    text-decoration:underline;
+ }
+#keyboard input {
+    box-shadow:2px 2px 2px #666;
+ }
+#keyboard input[type="text"] {
+    margin-top:10px;
+    margin-bottom: 10px;
+    border:1px solid #666;
+    border-radius:4px;
+    box-shadow:none;
+ }
+</style>
+
+    <script>
+(function() {
+   'use strict';
+   var i,c;
+function init(){
+   i=document.getElementById('keyboard').getElementsByTagName('input');
+for(c=0;c<i.length;c++) {
+if(i[c].type==='button') {
+   i[c].addEventListener('onclick',makeClickHandler(c));
+   }
+  }
+
+document.getElementById('clear').onclick=function() {
+   document.getElementById('text').value='';
+  }
+ }
+
+function makeClickHandler(c) {
+   i[c].onclick=function() {
+   document.getElementById('text').value+=this.value.toLowerCase();
+  };
+ }
+
+   window.addEventListener?
+   window.addEventListener('load',init,false):
+   window.attachEvent('onload',init);
+})();
+</script>
+
+</head>
+<body>
+   
+
+<div id="keyboard">
+
+    <div>
+        <input id="text" type="text" readonly="readonly">
+        <div></div>
+        <input type="button" value="  1  ">
+        <input type="button" value="  2  ">
+        <input type="button" value="  3  ">
+        <input type="button" value="  A  ">
+        <div></div>
+        <input type="button" value="  4  ">
+        <input type="button" value="  5  ">
+        <input type="button" value="  6  ">
+        <input type="button" value="  B  ">
+        <div></div>
+        <input type="button" value="  7  ">
+        <input type="button" value="  8  ">
+        <input type="button" value="  9  ">
+        <input type="button" value="  C  ">
+        <div></div>
+        <input type="button" value="  D ">
+        <input type="button" value="  0  ">
+        <input type="button" value="  E ">
+        <input type="button" value="  F ">
+        <div></div><br>   
+        <input id="clear" type="reset" value=" clear ">
+        <input id="Submit" type="button" value=" Done ">
+</div><div>
+
+</div>
+
+</div><!-- end #keyboard -->
+
+</body>
+</html>

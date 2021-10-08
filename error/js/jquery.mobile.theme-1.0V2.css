@@ -1,0 +1,30 @@
+.ui-bar-a{
+	border:1px solid #fff;    
+	background:#fff;
+	color:#fff;
+	font-weight: 700;
+	text-shadow:0 -1px 1px #000;    
+	background-image:-webkit-gradient(linear,left top,left bottom,from(#fff),to(#111));
+	background-image:-webkit-linear-gradient(#3c3c3c,#111);
+	background-image:-moz-linear-gradient(#3c3c3c,#111);
+	background-image:-ms-linear-gradient(#3c3c3c,#111);
+	background-image:-o-linear-gradient(#3c3c3c,#111);
+	background-image:linear-gradient(#3c3c3c,#111)
+	}
+	
+ui-bar-a,.ui-bar-a input,.ui-bar-a select,.ui-bar-a textarea,.ui-bar-a button{
+	font-family:Helvetica,Arial,sans-serif
+	}
+	
+.ui-bar-a .ui-link-inherit{
+	color:#fff
+}
+
+.ui-bar-a .ui-link{
+	color:#7cc4e7;font-weight:bold
+	}
+
+.header
+{
+    background-color: #FFFF00 ;
+}

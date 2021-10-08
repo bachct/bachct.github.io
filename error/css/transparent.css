@@ -1,0 +1,356 @@
+
+.backgroundA {
+    background: url(b15.jpg) repeat;
+    border: 2px solid red;
+}
+
+@font-face {
+    font-family:"Comic Sans MS";
+    src: url("../fonts/comic.ttf") /* EOT file for IE */
+    line-height: 120%;
+}
+
+
+
+.adiv {
+  width: 270px;
+  height: 45px;
+  margin: 15px;
+  padding: 10px;
+   background: -moz-radial-gradient(center, ellipse cover, #f0f9ff 0%, #cbebff 47%, #77cdff 100%); /* FF3.6-15 */
+background: -webkit-radial-gradient(center, ellipse cover, #f0f9ff 0%,#cbebff 47%,#77cdff 100%); /* Chrome10-25,Safari5.1-6 */
+background: radial-gradient(ellipse at center, #f0f9ff 0%,#cbebff 47%,#77cdff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0f9ff', endColorstr='#77cdff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+  border: 2px solid rgb(255,255,255);
+  border-radius: 10px;
+  font-size:18px;
+}
+
+.bdiv {
+  width: 270px;
+  height: 45px;
+  margin: 15px;
+  padding: 10px;
+  background: #000000;
+  border: 2px solid rgb(255,0,0);
+  border-radius: 10px;
+  font-size:18px;
+    
+}
+
+.blue {
+    width: 526px;
+    height: 36px;
+    box-sizing: border-box;
+    border: 2px solid blue;
+    border-radius: 10px;
+    padding-left:0px;
+    text-align: left;
+
+}
+
+.red {
+    width: 126px;
+    height: 26px;
+    margin: 10px auto;
+    box-sizing: border-box;
+    border: 3px solid red;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7);
+}
+
+container {
+    width: 282px;
+    border: 1px solid RED;
+    display: inline-block;
+    
+}
+
+block {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    margin: 5px;
+    background: #ffffff;
+    float: right;
+    font-size: 24px;
+    align-content: center;
+    text-align-last: center;
+    text:"test";
+}
+
+block2 {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    margin: 5px;
+    background: yellow;
+    float: right;
+    font-size: 24px;
+    align-content: center;
+    text-align-last: center;
+}
+
+block[v2] {
+    height: 210px;
+}
+
+block[h2] {
+    width: 130px;
+    background-color: forestgreen;
+}
+
+block[r2] {
+    width: 130px;
+    background-color: red;
+}
+
+ /* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 50%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.accordion.active, .accordion:hover {
+    background-color: #ccc;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+div.panel {
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+} 
+
+.transbox {
+height: 100%;
+margin: 20px;
+ background: -moz-radial-gradient(center, ellipse cover, #f0f9ff 0%, #cbebff 47%, #77cdff 100%); /* FF3.6-15 */
+background: -webkit-radial-gradient(center, ellipse cover, #f0f9ff 0%,#cbebff 47%,#77cdff 100%); /* Chrome10-25,Safari5.1-6 */
+background: radial-gradient(ellipse at center, #f0f9ff 0%,#cbebff 47%,#77cdff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0f9ff', endColorstr='#77cdff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+border: 2px solid #ffffff;
+opacity: 0.9;
+border-radius: 15px;
+line-height: 120%;
+text-align: center;
+filter: alpha(opacity=90); /* For IE8 and earlier */
+}
+
+.transbox a {
+margin: 5%;
+font-family:"Comic Sans MS";
+text-align: left;
+color: #000000;
+font-style:italic;
+}
+
+.transbox p {
+line-height: 150%;
+margin: 5%;
+font-family:"Comic Sans MS";
+text-align: left;
+color: #000000;
+font-style:italic;
+}
+
+.transbox h3
+{
+font-family:"Comic Sans MS";
+padding: 10px;
+color: #000000;
+}
+
+.transbox h2
+{
+font-family:"Comic Sans MS";
+padding: 0px 0px 0px 10px;
+color: #000000;
+}
+
+.transbox h4
+{
+padding: 10px;
+color: #000000;
+font-family:"Comic Sans MS";
+font-style:italic;
+
+}
+
+.transbox h5
+    {
+        color: #000000;
+        text-align: left;
+        padding: 0px 0px 0px 20px;
+        text-size: 11px;
+
+    }
+
+.transbox ul
+{
+    font-family:"Comic Sans MS";
+    text-align: left;
+    line-height: 100%;
+    list-style-type: none;
+    font-size: 14px;
+    padding: 0px 0px 0px 10px;
+    }
+
+.transbox ol
+{
+    color: #000000;
+    font-family:"Comic Sans MS";
+    text-align: left;
+    line-height: 25px;   
+    font-size: 14px;
+    padding: 0px 0px 0px 30px;
+    }
+
+.transbox hr
+{
+    width: 75%;
+}
+
+/******** Keypad CSS ********/
+
+
+.keypad
+{
+background-color:#000000;
+height:300px;
+width:270px;
+border-radius:8px;
+border: #ff0000 2px solid; 
+position:relative;
+top:5px;
+left:8%;
+    bottom: 8px;
+}
+
+.keypad2
+{
+background-color:#000000;
+height:300px;
+width:270px;
+border-radius:8px;
+border: #ff0000 2px solid; 
+position:relative;
+top:5px;
+left:5px;
+bottom: 8px;
+}
+
+.display
+{
+background-color:#222;
+width:240px;
+position:relative;
+left:15px;
+top:20px;
+height:40px;
+}
+.display input
+{
+position:inherit;
+left:2px;
+top:2px;
+height:35px;
+color:black;
+background-color:#bccd95;
+font-size:18px;
+text-align:right;
+}
+.keys
+{
+position:relative;
+top:15px;
+}
+.button
+{
+width:52px;
+height:40px;
+border-radius:6px;
+margin-left:6px;
+cursor:pointer;
+  
+}
+.button.gray
+{
+color:#000000;
+background-color:#ffffff;
+border:#ffffff 1px solid;
+
+}
+.button.pink
+{
+color:#ffffff;
+font-weight: bold;
+background-color:#ff0000;
+border:#ffffff 0px solid;
+}
+.button.white
+{
+color:#000000;
+    font-weight: bold;
+background-color: #ffffff;
+border:#ffffff 0px solid;
+
+}
+.button.black
+{
+color:#ffffff;
+background-color: #000000;
+border-bottom:#ffffff 0px solid;
+border-top:0px #ffffff solid;
+}
+.button.orange
+{
+color: #000000;
+background-color:#fff00f;
+border-bottom:#ff0000 0px solid;
+border-top:0px FF9933 solid;
+}
+.button.yellow
+{
+color: #000000 ;
+    font-weight: bold;
+background-color:#ffff00;
+border-bottom:#ff0000 0px solid;
+border-top:0px FF9933 solid;
+width:112px;
+height:40px;
+}
+.gray:active
+{
+border-top:black 2px solid;
+border-bottom:2px #6f6f6f solid;
+}
+.pink:active
+{
+border-top:black 2px solid;
+border-bottom:#ff4561 2px solid;
+}
+.black:active
+{
+border-top:black 2px solid;
+border-bottom:#303030 2px solid;
+}
+.orange:active
+{
+border-top:black 2px solid;
+border-bottom:FF9933 2px solid;
+}
+p
+{
+line-height:10px;
+}
+
+//  ********* End of Keypad *********//

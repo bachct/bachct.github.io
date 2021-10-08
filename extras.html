@@ -1,0 +1,175 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1"> 
+		<title></title>
+		<meta name="Ray Thompson 30-10-2017"/>
+        <link href="css/input-page.css" rel="stylesheet" type="text/css"/>
+        <link href="css/index_main.less.css" rel="stylesheet" type="text/css"/>
+        <link rel="stylesheet" type="text/css" href="css/transparent.css" />
+      <link rel="stylesheet" type="text/css" href="css/pop-up.css">
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+        <link rel="stylesheet" type="text/css" href="css/4_col.css" />
+		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+        <script src="js/modernizr.custom.25376.js"></script>
+    <script type="text/javascript">
+$(document).ready(function(){
+  $("#menu_button").click(function(){
+    show_menu();
+  });
+});
+function show_menu()
+{
+$('#menu_links').animate({width:'toggle'},350);
+}
+    </script>
+	</head>
+   <body background = "img/S2_media.png"  style opacity = "0.2">
+     <p id="showMenu">
+    &nbsp;&nbsp;<img src="img/menuicon.png"><font color ="#FFFF00">&nbsp;&nbsp;Menu
+            </font> </p><hr>
+		<div id="perspective" class="perspective effect-airbnb">
+			<div class="container">
+				<div class="wrapper">
+                    <div class="transbox">
+					<div class="codrops-top clearfix">
+						</div>
+					<h2>ATM Error Code <br><br>Translator</h2>
+                         <div data-role="content"> 
+       <h3>22e DISPENSER NVRAM CLEAR</h3>
+             <font color="#FFFFFF" ><ol>
+                <ol>
+                <li>Power off ATM.</li>
+                <li>Pull out dispenser and remove battery from board. Unclips from R/H side. Replace after 60 seconds.</li>
+                <li>Rack dispenser back into position and power on ATM with NCR usb key inserted.</li>
+                <li>When booted up, enter into diagnostics/sys app/ and select number 8 self service configuration.</li>
+                <li>Select 1 set device config/ then 1 usb cash dispenser/ then 1 note configuration and the dispenser will run a clear.</li>
+                <li>Select 1 set.</li>
+                <li>Display will show note size type 1 through to 4 as 66.</li>
+                <li>Tab down to singularity type 1 and enter in 102.</li>
+                <li>Tab down to singularity type 2 and enter 107.</li>
+                <li>3 and 4 can remain as 255 so tab down to page down and press page down on right hand side fdk menu.</li>
+                <li>Leave presentation order as 1234 and press ok.</li>
+                <li>Display will show configure new parameters, toggle to yes and press ok.</li>
+                <li>Hit previous and select 2 device parameter configuration.</li>
+                <li>Dispense protection configuration should be USB. If logical or physical, toggle to usb and press ok.</li>
+                <li>Cancel back out to the main system application menu and check 5 device status list. Complete a clear all if required and exit back to main menu to complete a test cash. The ATM may reset itself when exiting to the main menu. If so wait for full reboot and complete test cash and bring the ATM back into service and complete a test transaction.</li></ol></font>
+                <br>
+     <hr>
+     <br>
+    <h3>5877, 5870, 5884 DISPENSERS.</h3><br>
+        <font color="#FFFFFF" >The top bank of 8 switches.
+        <ol>
+            <li>Switches 3 and 8 on.</li>
+            <li>Power the ATM up.</li>
+            <li>The LED's on the control board start pulsing.</li>
+            <li>When they stop pulsing turn the ATM power off.</li>
+            <li>Reset the 2 dip switches.</li>
+            <li>The note opacities and singularities will need setting up.</li>
+            <li>$20 Type1 = 102 and Type2 $50 = 107 & sizes at 66.</li></ol>
+        </font>
+     <br>
+        <hr>
+     <br>
+                 <h3>P4 & P3 SDC NVRam Clear:</h3>
+        <br>
+            
+        <font color="#FFFFFF" >The bank of 8 switches on the SDC board.
+        <ol>
+            <li>Switches 3 and 8 on.</li>
+            <li>Power the ATM up.</li>
+            <li>Give it 45 seconds.</li>
+            <li>Turn the ATM power off.</li>
+            <li>Reset the 2 dip switches.</li>
+            </ol>
+        </font>
+     <br><br>
+        <hr>
+     <br><br>
+                 <h3>22e SDC NVRam Clear:</h3>
+        <br>
+            <br>
+        <font color="#FFFFFF" >
+        <ol>
+            <li>Remove the onboard battery.</li>
+            <li>Give it 45 seconds.</li>
+            <li>Replace the battery.</li>
+            </ol>
+        </font>
+     <br><br>
+     <hr>
+     <br>
+                 <h3>CARD READER<br>MCRW/IMCRW<br>NVRAM Clear:</h3>
+        <br>
+            
+        <font color="#FFFFFF" >
+        <ol>
+            <li>On the main board there is a block of 4 switches, they are in front, close to the face.</li>
+            <li>To reset NVRAM, you need to switch the switch 3 to ON.</li>
+            <li>Turn on the power for 20-30 seconds.</li>
+            <li>Turn the power off.</li>
+            <li>Return switch 3 back to OFF.</li>
+            <br>
+            <li>For the NCR 5870 reader you need to switch both 3 and 8.</li>
+            </ol>
+        </font>
+     <br>
+          <hr>
+     <br>
+                 <h3>NCR PRINTERS<br>NVRAM Clear:</h3>
+        <br>
+                 <h3>Printers connected via SDC bus.</h3>
+            <br>
+        <font color="#FFFFFF" >
+        <ol>
+            <li>Record / memorize the current position set DIP DSW2 switches.</li>
+            <li>Set DIP switches 3,8 to ON.</li>
+            <li>Press the RESET (SW2 button). While LEDs LEDs flash, installs the factory default settings.</li>
+            <li>Return to the original position of the DIP switches.</li>
+            <br>
+                    </ol>
+        </font>
+     <br>
+     
+     <h3>
+            Printers connected via COM-port.
+            </h3><br>
+        <font color="#FFFFFF" >
+        <ol>
+            <li>Record / memorize the current position set DIP DSW2 switches.</li>
+            <li>Set DIP switches 1, 2 and 5 to ON.</li>
+            <li>Press the RESET (SW2 button). While LEDs LEDs flash, installs the factory default settings.</li>
+            <li>Return to the original position of the DIP switches.</li>
+            <br>
+                    </ol>
+        </font>
+     <br>
+        
+    </div>
+         
+            
+    <br>
+              
+               
+            
+        </div>  <!-- wrapper -->
+			<!-- /container -->
+                             
+</div>
+</div>
+            
+			<nav class="outer-nav left vertical">
+				<a href="index.html" class="icon-home">HOME</a>
+				<a href="NCR_menu.html" class="icon-star">NCR MENU</a>
+				<a href="Extra_menu.html" class="icon-lock">HELPFUL INFO</a>
+				<a href="about.html" class="icon-mail">ABOUT</a>
+				<a href="contact.html" class="icon-mail">CONTACT</a>
+            </nav>               
+		</div><!-- /perspective -->
+    <script src="js/classie.js"></script>
+        <script src="js/menu.js"></script>
+</body>
+</html>

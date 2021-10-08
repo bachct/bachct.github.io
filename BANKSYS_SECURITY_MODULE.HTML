@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1"> 
+		<title></title>
+		<meta name="Ray Thompson 5-11-2017"/>
+        <link href="css/input-page.css" rel="stylesheet" type="text/css"/>
+        <link rel="stylesheet" type="text/css" href="css/transparent.css" />
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+        <script src="js/modernizr.custom.25376.js"></script>
+        <script type="text/javascript">
+$(document).ready(function(){
+  $("#menu_button").click(function(){
+    show_menu();
+  });
+});
+function show_menu()
+{
+$('#menu_links').animate({width:'toggle'},350);
+}
+    </script>
+	</head>
+	<body background = "img/mcrw.jpg"  style opacity = "0.2">        
+     <p id="showMenu">
+    &nbsp;&nbsp;<img src="img/menuicon.png"><font color ="#FFFF00">&nbsp;&nbsp;Menu
+            </font> </p><hr>
+		<div id="perspective" class="perspective effect-airbnb">
+			<div class="container">
+				<div class="wrapper">
+                    <div class="transbox">  
+                        <div class="codrops-top clearfix">
+						</div>
+					                        <h2>ATM Error Code<br><br>Translator</h2>
+						<h3>NCR Error Codes.<br>BANKSYS SECURITY MODULE</h3>    
+                        <h4 align="left">A turnaround plug is required for the edge of the board turnaround test.</h4>
+                        <h4 align="left">Enter data:</h4>
+           		  <center> <input type="number" id="banksys_mstatus" value="" class="css-input" placeholder="Enter M-Status"/><br><br>    
+        <script src="js/BANKSYS_SECURITY_MODULE_mstatus.js">       
+        </script> </center>        
+        <div class="container">
+        <center><input id="banksys_mdata" type="text" class="css-input" value="" placeholder="Enter M-Data"></center><br/><br>
+            <div class="submit-css" onclick="banksys_Function()+banksys_mdata()">Submit<br>
+            <script src="js/BANKSYS_SECURITY_MODULE_mdata.js"></script><br/> 
+            </div>
+            <h4 align="left">M-Status:<p id="banksys_answer"></p></h4>
+            <h4 align="left">M-DATA: Byte 0<br><p id="banksys_data"></p></h4>
+            <h4 align="left">M-DATA: Byte 1<br><p id="banksys_Byte1"></p></h4>
+                        </div>
+            						</div><!-- /main -->
+				</div><!-- wrapper -->
+			</div><!-- /container -->
+			<nav class="outer-nav left vertical">
+				<a href="index.html" class="icon-home">HOME</a>
+				<a href="NCR_menu.html" class="icon-star">NCR MENU</a>
+				<a href="Extra_menu.html" class="icon-lock">HELPFUL INFO</a>
+				<a href="about.html" class="icon-mail">ABOUT</a>
+				<a href="contact.html" class="icon-mail">CONTACT</a>
+            </nav>
+		</div><!-- /perspective -->
+        	<script src="js/classie.js"></script>
+        <script src="js/menu.js"></script>
+	</body>
+</html> 

@@ -1,0 +1,101 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1"> 
+		<title></title>
+		<meta name="Ray Thompson 29-4-2017"/>
+        <link href="css/input-page.css" rel="stylesheet" type="text/css"/>
+      <link rel="stylesheet" type="text/css" href="css/pop-up.css">
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+        <script src="js/modernizr.custom.25376.js"></script>
+        <SCRIPT TYPE="text/javascript">
+    window.onload = function() {
+  document.getElementById("LearnMoreBtn").onclick = function(){
+        var overlay = document.getElementById("overlay");
+        var popup = document.getElementById("popup");
+        overlay.style.display = "block";
+        popup.style.display = "block";
+    };
+    
+  document.getElementById("CloseBtn").onclick = function(){
+        var overlay = document.getElementById("overlay");
+        var popup = document.getElementById("popup");
+        overlay.style.display = "none";
+        popup.style.display = "none";      
+  }
+};
+</SCRIPT>
+<script type="text/javascript">
+$(document).ready(function(){
+  $("#menu_button").click(function(){
+    show_menu();
+  });
+});
+function show_menu()
+{
+$('#menu_links').animate({width:'toggle'},350);
+}
+    </script>
+</head> 
+<body id="homepage">
+        <p id="showMenu">
+    &nbsp;&nbsp;<img src="img/menuicon.png">&nbsp;&nbsp;Menu
+        </p>
+    <div id="perspective" class="perspective effect-airbnb">
+   <div class="container">
+				<div class="wrapper"><!-- wrapper needed for scroll -->
+					<!-- Top Navigation -->
+					<div class="codrops-top clearfix">
+						</div>
+					<header class="codrops-header">
+						<h1>ATM Error Code Translator<br><br><span>Translating NCR, Hyosung, Triton and Wincor Error Codes to English.</span></h1>	
+					</header>
+					<div class="main clearfix">
+						<div class="column">	
+        <font color="green">Safe Combo:
+        <br>
+            Le Guard Lock.</font><br><br>
+        <font color="#0066FF" ><p>To enter code from the factory.</p>
+        <list>
+            <ol>Hold "0" till it beeps</ol>
+            <ol>Press 000000</ol>
+            <ol>Then press 555555</ol>
+            <ol>Then enter 123456 twice.</ol></list>
+        </font><br>
+        <hr>
+        
+        <br>
+        <font color="green" >To enter time delay.</font><br><br>
+            <font color="#0066FF" >Enter opening code but hold down last number till it beeps.<br>
+            Press 9<br>
+            Enter time delay and open window twice (i.e. if 15min delay and 5min window was required you would enter 1505 twice).<br>
+            <hr>
+                <br>
+        <font color="green" ><p>To clear an unknown safe door combination.</p></font>
+                <font color="#0066FF" ><p>The safe door needs to be already open or the entire mechanism on the bench for this.</p><p>Remove the cover from the rectangular housing(solenoid unit)<br>Note circuit board inside.</p><p>On circuit board find chip and find small test point holes next to pins 2 and 6 on the chip.</p><p>With everything connected so keypad is functional jumper holes 2 and 6 together.</p>
+                    <list><ol>On keypad press 555555</ol><ol>The unit will beep 16 times.</ol><ol>Then press 000000 and 555555.</ol><ol>Then press 123456 twice, remove jumper from holes 2 and 6.</ol><ol>The combination is now 123456</ol></list><br><hr>
+                <br><font color="green" >To change to customers desired combination.</font><br>
+                    <list><font color="#0066FF"><ol>Open safe door first.</ol><ol>Press 000000</ol><ol>Enter their old code once(two beeps will sound)</ol><ol>Enter the new code twice(two beeps each time)</ol><ol>Test new code (with safe door still open)</ol><ol>Lock the safe.</ol></font></list><br><hr>
+                    </div>
+						</div><!-- /main -->
+				</div><!-- wrapper -->
+			</div><!-- /container -->
+                   <nav class="outer-nav left vertical">
+				<a href="index.html" class="icon-home">HOME</a>
+				<a href="NCR_menu.html" class="icon-star">NCR MENU</a>
+				<a href="Extra_menu.html" class="icon-lock">HELPFUL INFO</a>
+				<a href="about.html" class="icon-mail">ABOUT</a>
+				<a href="contact.html" class="icon-mail">CONTACT</a>
+            </nav>
+                    </div>
+                    <center><div data-role="footer">real creative app &copy;
+</div></center>
+                <script src="js/classie.js"></script>
+        <script src="js/menu.js"></script>
+        
+    </body>
+</html>

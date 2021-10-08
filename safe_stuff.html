@@ -1,0 +1,172 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1"> 
+		<title></title>
+		<meta name="Ray Thompson 30-10-2017"/>
+        <link href="css/input-page.css" rel="stylesheet" type="text/css"/>
+      <link rel="stylesheet" type="text/css" href="css/pop-up.css">
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+     <link rel="stylesheet" type="text/css" href="css/transparent.css" />
+		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+        <script src="js/modernizr.custom.25376.js"></script>
+     <script type="text/javascript">
+$(document).ready(function(){
+  $("#menu_button").click(function(){
+    show_menu();
+  });
+});
+function show_menu()
+{
+$('#menu_links').animate({width:'toggle'},350);
+}
+    </script>
+</head> 
+<body background = "img/S2_media.png"  style opacity = "0.2">
+     <p id="showMenu">
+    &nbsp;&nbsp;<img src="img/menuicon.png"><font color ="#FFFF00">&nbsp;&nbsp;Menu
+            </font> </p><hr>
+    <div id="perspective" class="perspective effect-airbnb">
+   <div class="container">
+				<div class="wrapper"><!-- wrapper needed for scroll --><div class="transbox">
+					<!-- Top Navigation -->
+					<div class="codrops-top clearfix">
+						</div>
+					<h2>ATM Error Code <br><br>Translator</h2>
+                         <div data-role="content"> 
+                             <h3>Safe Combo:</h3>
+                             <h3>Le Guard Lock.</h3>
+                             <h3>To enter code from the factory.</h3>
+                            <font color="#FFFFFF" >
+        <list>
+            <ol>Hold "0" till it beeps</ol>
+            <ol>Press 000000</ol>
+            <ol>Then press 555555</ol>
+            <ol>Then enter 123456 twice.</ol></list>
+        </font><br>
+        <hr>
+        
+        <br>
+        <h3>To enter time delay.</h3><br>
+            <font color="#FFFFFF" >
+                <list>
+                <ol>Enter opening code but hold down last number till it beeps.</ol>
+                <ol>Press 9</ol>
+                <ol>Enter time delay and open window twice (i.e. if 15min delay and 5min window was required you would enter 1505 twice).</ol>
+                </list>
+                <br>
+            <hr>
+                <br>
+        <h3>To clear an unknown safe door combination.</h3>
+                <font color="#FFFFFF" >
+                    <list>
+                        <ol>The safe door needs to be already open or the entire mechanism on the bench for this.</ol>
+                        <ol>Remove the cover from the rectangular housing(solenoid unit)</ol>
+                        <ol>Note circuit board inside.</ol>
+                        <br>
+                        <center><img src="img/20160912_130516.png" width="323" height="420"></center>
+<br>
+                        <ol>On circuit board find chip and find small test point holes next to pins 1 and 6 on the chip. They actually go to the second leg and the sixth leg on the right hand side of the chip. Circled in yellow in the above picture.</ol>
+                        <ol>With everything connected so keypad is functional jumper holes 2 and 6 together.</ol>
+                        <ol>On keypad press 555555</ol>
+                        <ol>The unit will beep 16 times.</ol>
+                        <ol>Then press 000000 and 555555.</ol>
+                        <ol>Then press 123456 twice, remove jumper from holes 2 and 6.</ol>
+                        <ol>The combination is now 123456</ol>
+                    </list><br>
+                    <hr>
+                <br><h3>To change to customers desired combination.</h3><br>
+                    
+                        <list>
+                        <ol><font color="#ff0000">Open safe door first.</font></ol>
+                        <font color="#FFFFFF">
+                        <ol>Press 000000</ol>
+                        <ol>Enter their old code once(two beeps will sound)</ol><ol>Enter the new code twice(two beeps each time)</ol><ol>Test new code (with safe door still open)</ol>
+                        <ol>Lock the safe.</ol></font></list><br><hr>
+                    <br><h3>Possible Combo Lock Problems and Remedies.</h3><br>
+                     <list>
+                    <h3>
+                        <ol>Opening the lock.</ol></h3>
+                        <font color="#FFFFFF">
+                            <ol>Enter the code and turn the handle CLOCKWISE within 4 seconds into the OPEN position (2 beeps)</ol></font></list>
+                     <list>                           
+                            <h3>
+                                <ol>Locking the safe.</ol></h3>
+                        <font color="#FFFFFF">
+                            <ol>Turn the handle ANTI-CLOCKWISE into the CLOSED position (no beeps)</ol></font></list>                   
+                     <list>
+                            <h3>
+                            <ol>Incorrect Code Penalty.</ol></h3>
+                        <font color="#FFFFFF">
+                            <ol>Three consecutive invalid codes will render the lock inactive for a period of 15 mins. Key pressing is refused in this period. </ol>
+                        </font></list>
+                    <list>
+                            <h3>
+                            <ol>Valid Code.</ol></h3>
+                        <font color="#FFFFFF">
+                            <ol>A valid code is followed by a double beep. (2 beeps)</ol>
+                        </font></list>
+                    <list>
+                            <h3>
+                            <ol>Invalid Code.</ol></h3>
+                        <font color="#FFFFFF">
+                            <ol>An invalid code is followed by a three beeps. (3 beeps)</ol>
+                        </font></list>
+                    <list>
+                            <h3>
+                            <ol>Partly Entered Code.</ol></h3>
+                        <font color="#FFFFFF">
+                            <ol>After an interval of more than 10secs, the already entered part of the code is deleted and the entire sequence has to be re-entered. </ol>
+                        </font></list>
+                     <list>
+                            <h3>
+                            <ol>Change of Code.</ol></h3>
+                        <font color="#FFFFFF">
+                            <ol>1.Press "0" six times. (2 beeps) </ol>
+                            <ol>2.Enter your existing 6 digit code. (2 beeps) </ol>
+                            <ol>3.Enter your NEW 6 digit code.</ol>
+                            <ol>4.Enter your NEW 6 digit code again. (2 beeps) </ol>
+                            <ol>If mistakes are made while changing the code or if an interval occurs of more than 10 secs, the old code remains valid and the entire sequence has to be re-entered. </ol>
+                        </font></list>
+                    <list>
+                            <h3>
+                            <ol>Time Delay.</ol></h3>
+                        <font color="#FFFFFF">
+                            <ol>1.Enter valid code. (Delay period starts, LED flashes RED at 1 sec intervals) </ol>
+                            <ol>* If valid code entered during delay: Delay period restarts. </ol>
+                            <ol>** If invalid codes are entered during delay: Delay period aborts.</ol>
+                            <ol>2.At the end of delay period, open period starts. (LED flashes RED at 1/2 sec intervals, lock beeps at 10 sec intervals) </ol>
+                            <ol>3. During open period , enter valid code. </ol>
+                        </font></list>
+                    <list>
+                            <h3>
+                            <ol>Low Battery.</ol></h3>
+                        <font color="#FFFFFF">
+                            <ol>1.Refused access to safe due to repeated beeping (6 beeps) </ol>
+                            <ol>2. Allowed acess to safe but repeated beeping (6 beeps)</ol>
+                            <ol>3. A double beep or no keypad activity.</ol>
+                            <ol>All could indicate that the battery needs replacement.</ol>
+                            <ol>* Use only 9V Duracell battery. </ol>
+                        </font></list>
+                        <br>
+                </font>
+                             </font>
+                    </div>
+                    </div>
+				</div><!-- wrapper -->
+			</div><!-- /container -->
+                   <nav class="outer-nav left vertical">
+				<a href="index.html" class="icon-home">HOME</a>
+				<a href="NCR_menu.html" class="icon-star">NCR MENU</a>
+				<a href="Extra_menu.html" class="icon-lock">HELPFUL INFO</a>
+				<a href="about.html" class="icon-mail">ABOUT</a>
+				<a href="contact.html" class="icon-mail">CONTACT</a>
+			</nav>
+                    </div>                    
+                <script src="js/classie.js"></script>
+        <script src="js/menu.js"></script>
+    </body>
+</html>
